@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --colorPrimary: hsl(214, 70%, 50%);
+  --colorSecondary: hsl(214, 70%, 60%);
+  --colorDark: #111827;
+  --colorMedium: #545964;
+  --colorLight: #ece9e9;
+}
 
 * {
   box-sizing: border-box;
@@ -6,27 +14,20 @@
   margin: 0;
 }
 
-:root {
-  --accent: hsl(214, 70%, 50%);
-  --accent-sec: hsl(214, 70%, 60%);
-  --dark: #18181b;
-  --background: hsl(214, 10%, 80%);
-}
-
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--background);
+  font-family: 'Inter', sans-serif;
+  background-color: var(--colorLight);
 }
 
 nav {
-  background-color: var(--accent);
+  background-color: var(--colorPrimary);
   text-align: center;
 }
 
 nav h1 {
   font-size: 2rem;
   padding: 0.7rem;
-  color: whitesmoke;
+  color: var(--colorLight);
 }
 .translation-div {
   margin: auto;
@@ -45,15 +46,15 @@ textarea {
   min-height: 20vh;
   margin: 2rem;
   font-size: large;
-  border: 2px solid var(--dark);
+  border: 2px solid var(--colorDark);
   border-radius: 0.2rem;
   padding: 1rem;
   font-weight: bold;
 }
 
 button {
-  background-color: var(--accent);
-  color: whitesmoke;
+  background-color: var(--colorPrimary);
+  color: var(--colorLight);
   margin: 1rem 0rem;
   padding: 0.5rem 1rem;
   font-size: large;
@@ -65,7 +66,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--accent);
+  background-color: var(--colorPrimary);
 
   position: absolute;
   bottom: 0;
@@ -78,14 +79,14 @@ button {
 }
 
 .footer-links li a {
-  color: whitesmoke;
+  color: var(--colorLight);
   padding: 1rem;
   display: block;
   font-weight: bold;
 }
 
 .footer-links li:hover {
-  background-color: var(--accent-sec);
+  background-color: var(--colorSecondary);
 }
 li {
   list-style: none;
